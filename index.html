@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UBC Builder | Premium Construction</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <!-- Custom Cursor -->
+  <div class="custom-cursor-dot"></div>
+  <div class="custom-cursor-ring"></div>
+
+  <!-- Pixy-Style Preloader -->
+  <div id="preloader" class="pixy-preloader">
+    <div class="pixy-preloader-content">
+      <div class="pixy-animation-1">
+        <p class="pixy-word">Pioneering</p>
+        <p class="pixy-word">Architecture</p>
+        <p class="pixy-word">Excellence</p>
+      </div>
+      <div class="pixy-animation-2">
+        <div class="pixy-reveal-frame">
+          <div class="pixy-reveal-box"></div>
+          <p class="pixy-brand">UBC BUILDER</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Transition Curtains -->
+  <div class="transition-curtains" id="curtains">
+    <div class="curtain curtain-left"></div>
+    <div class="curtain curtain-right"></div>
+  </div>
+
+  <!-- Premium Navbar -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <a href="#hero" class="logo-nav">
+        <img src="logo.png" alt="UBC Logo" class="nav-logo-img">
+        <span class="brand-name">UBC BUILDER</span>
+      </a>
+    </div>
+    <div class="nav-center">
+      <div class="nav-links-wrapper">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#ongoing" class="nav-link">Ongoing</a>
+        <a href="#completed" class="nav-link">Projects</a>
+      </div>
+    </div>
+    <div class="nav-right">
+      <a href="mailto:info@ubcbuilder.com" class="contact-btn">Get in Touch</a>
+      <button class="hamburger" id="menu-toggle" aria-label="Menu">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-menu-content">
+      <a href="#about" class="mobile-nav-link">About</a>
+      <a href="#ongoing" class="mobile-nav-link">Ongoing</a>
+      <a href="#completed" class="mobile-nav-link">Projects</a>
+      <a href="#contact" class="mobile-nav-link">Contact</a>
+    </div>
+  </div>
+
+  <main class="main-wrapper" id="home">
+
+    <!-- Pixy-Style Animated Hero Section -->
+    <header class="hero-section" id="hero">
+      <div class="hero-pixy-container">
+        <!-- Left Text Side -->
+        <div class="hero-pixy-text">
+          <div class="mask-reveal delay-1"><p class="hero-subtitle-pixy mt">Premium <br>Architecture</p></div>
+          <div class="mask-reveal delay-2"><h1 class="hero-title-pixy">UBC</h1></div>
+          <div class="mask-reveal delay-2"><h1 class="hero-title-pixy">BUILDER.</h1></div>
+          <div class="mask-reveal delay-3"><p class="hero-subtitle-pixy mt">Shaping spaces since 2014</p></div>
+        </div>
+        
+        <!-- Right Image Side -->
+        <div class="hero-pixy-img-container">
+          <div class="scroll-circle" data-parallax-y="-80">
+            <svg viewBox="0 0 100 100" class="rotating-text">
+              <path id="circle" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="none"/>
+              <text font-family="Inter" font-size="10.5" font-weight="500" letter-spacing="2" fill="#1A1A1A">
+                <textPath href="#circle">SCROLL DOWN • SCROLL DOWN • </textPath>
+              </text>
+            </svg>
+            <span class="arrow-down">↓</span>
+          </div>
+          <div class="hero-pixy-img img-reveal">
+            <div class="parallax-img-wrapper">
+              <img src="/assets/hero_background.png" alt="Hero Architecture" class="parallax-img">
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Premium About Us Section -->
+    <section id="about" class="about-premium-section section-padding">
+      <div class="about-premium-container">
+        <div class="about-text-content img-reveal">
+          <h4 class="section-kicker">About Us</h4>
+          <h2 class="section-massive-title">Building <br>Legacies.</h2>
+          <p class="about-desc">UBC Builder is an architectural and construction firm dedicated to crafting premium residential and commercial spaces. Since 2014, we have transformed the Mangalore skyline with a commitment to quality, aesthetic brilliance, and structural integrity.</p>
+          <div class="about-stats">
+            <div class="stat-item">
+              <span class="stat-number">10+</span>
+              <span class="stat-label">Years of Excellence</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">20+</span>
+              <span class="stat-label">Projects Delivered</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-images-content img-reveal">
+          <div class="about-img-main">
+            <img src="assets/lotus.jpeg" alt="Architecture 1">
+          </div>
+          <div class="about-img-float parallax-float">
+            <img src="assets/hero_background.png" alt="Architecture 2">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ongoing Projects Premium Carousel Section -->
+    <section id="ongoing" class="ongoing-carousel-section section-padding">
+      <div class="mask-reveal"><h2 class="section-title text-center">Ongoing Projects</h2></div>
+      
+      <div class="carousel-container img-reveal">
+        <div class="carousel-track" id="ongoing-track">
+          
+          <!-- Slide 1: Evelyn John's -->
+          <div class="carousel-slide active" data-progress="40">
+            <div class="slide-image parallax-img-wrapper">
+              <img src="assets/evelyn.jpeg" alt="UBC Evelyn John's" class="parallax-img">
+            </div>
+            <div class="slide-content">
+              <div class="slide-content-inner">
+                <h3 class="split-text">Evelyn John’s</h3>
+                <p class="slide-subtitle">A Refined Residential Address</p>
+                <div class="slide-info fade-up-stagger">
+                  <p><strong>Location:</strong> Bejai New Road</p>
+                  <p><strong>Type:</strong> 5 Floors, 1 Tower</p>
+                  <p><strong>Config:</strong> 2 BHK | 3 BHK</p>
+                </div>
+                <div class="progress-container fade-up-stagger">
+                  <div class="progress-text">
+                    <span>Under Construction</span>
+                    <span class="progress-perc">40%</span>
+                  </div>
+                  <div class="slide-progress-bar"><div class="fill"></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2: SE-RENE -->
+          <div class="carousel-slide" data-progress="25">
+            <div class="slide-image parallax-img-wrapper">
+              <img src="assets/serene.jpeg" alt="UBC SE-RENE" class="parallax-img">
+            </div>
+            <div class="slide-content">
+              <div class="slide-content-inner">
+                <h3 class="split-text">SE-RENE</h3>
+                <p class="slide-subtitle">A Signature Residential Apartment</p>
+                <div class="slide-info fade-up-stagger">
+                  <p><strong>Location:</strong> Mulihithlu, Bolar</p>
+                  <p><strong>Type:</strong> Exclusive Tower (3P + 10F)</p>
+                  <p><strong>Config:</strong> 2, 3, 4 BHK</p>
+                </div>
+                <div class="progress-container fade-up-stagger">
+                  <div class="progress-text">
+                    <span>Under Construction</span>
+                    <span class="progress-perc">25%</span>
+                  </div>
+                  <div class="slide-progress-bar"><div class="fill"></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3: Kankanady Tower -->
+          <div class="carousel-slide" data-progress="10">
+            <div class="slide-image parallax-img-wrapper">
+              <img src="assets/tower7.jpeg" alt="UBC Kankanady Tower" class="parallax-img">
+            </div>
+            <div class="slide-content">
+              <div class="slide-content-inner">
+                <h3 class="split-text">Kankanady Tower</h3>
+                <p class="slide-subtitle">A Premium Commercial Landmark</p>
+                <div class="slide-info fade-up-stagger">
+                  <p><strong>Location:</strong> Kankanady</p>
+                  <p><strong>Type:</strong> Commercial (Basement + 6F)</p>
+                  <p><strong>Area:</strong> 200 sft to 2250 sft</p>
+                </div>
+                <div class="progress-container fade-up-stagger">
+                  <div class="progress-text">
+                    <span>Pre-Launch</span>
+                    <span class="progress-perc">10%</span>
+                  </div>
+                  <div class="slide-progress-bar"><div class="fill"></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        
+        <!-- Controls -->
+        <div class="carousel-controls mask-reveal">
+          <button id="prev-btn" class="ctrl-btn arrow-btn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+          </button>
+          <div class="carousel-indicators" id="carousel-dots">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+          </div>
+          <button id="next-btn" class="ctrl-btn arrow-btn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Completed Projects Section -->
+    <section id="completed" class="completed-section section-padding bg-light">
+      <h2 class="section-title text-center">Completed Projects</h2>
+      <div class="completed-grid">
+        <!-- Slide 1: Lotus Park -->
+        <a href="#" class="comp-card img-reveal">
+          <img src="assets/lotus.jpeg" alt="UBC Lotus Park">
+          <div class="comp-info">
+            <h3>UBC Lotus Park</h3>
+            <p>Adyar, Mangalore • 5 Floors • Ready-to-Move-In</p>
+          </div>
+        </a>
+        <!-- Slide 2: Square -->
+        <a href="#" class="comp-card img-reveal">
+          <img src="assets/square.jpeg" alt="UBC SQUARE">
+          <div class="comp-info">
+            <h3>UBC SQUARE</h3>
+            <p>Kankanady New Bypass Road • 6 Floors • Ready to Move-In</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section section-padding">
+      <div class="process-container">
+        <h2 class="section-title text-center">FAQ & Process</h2>
+        <div class="accordion-list">
+          <div class="accordion-item">
+            <div class="accordion-head">What types of projects do you handle? <span>+</span></div>
+            <div class="accordion-body"><p>We specialize in both commercial and residential construction, ranging from high-rise office buildings to luxury apartment complexes and public infrastructure projects.</p></div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-head">How do you track and report progress? <span>+</span></div>
+            <div class="accordion-body"><p>We provide full transparency. Clients have access to an ongoing dashboard that details every milestone, represented precisely in our progress trackers shown above.</p></div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-head">Do you incorporate sustainable practices? <span>+</span></div>
+            <div class="accordion-body"><p>Yes! We are committed to green building. We use sustainable materials, optimize energy efficiency, and follow LEED certification guidelines seamlessly.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Premium Footer Section -->
+    <footer id="contact" class="footer-premium">
+      <div class="footer-cta img-reveal">
+        <h2 class="massive-footer-title">Let's <br> Build.</h2>
+        <a href="mailto:info@ubcbuilder.com" class="footer-email-link">info@ubcbuilder.com</a>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-col">
+          <h4>Mangalore Office</h4>
+          <p>Bejai New Road, Mangalore<br>Karnataka, India</p>
+        </div>
+        <div class="footer-col">
+          <h4>Socials</h4>
+          <div class="social-links">
+            <a href="#" class="hover-link">Instagram</a>
+            <a href="#" class="hover-link">LinkedIn</a>
+            <a href="#" class="hover-link">Facebook</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <p>+91 98765 43210</p>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <p>&copy; 2026 UBC Builder. Designed with Quiet Luxury.</p>
+      </div>
+    </footer>
+  </main>
+  <script src="./main.js"></script>
+</body>
+</html>
