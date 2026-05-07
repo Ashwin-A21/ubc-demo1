@@ -72,7 +72,6 @@ document.addEventListener('DOMContentLoaded', () => {
           lenis.start(); // ACTIVATE SCROLL
           
           initAnimations();
-          revealHero(); // Trigger hero reveal
           ScrollTrigger.refresh();
         }
       });
@@ -82,17 +81,6 @@ document.addEventListener('DOMContentLoaded', () => {
   // --- 4. HERO STRIPS LOGIC ---
   const strips = document.querySelectorAll('.strip');
   const heroStrips = document.getElementById('hero-strips');
-
-  const revealHero = () => {
-    gsap.from('.strip', {
-      y: 100,
-      opacity: 0,
-      duration: 1.5,
-      stagger: 0.1,
-      ease: "power4.out",
-      delay: 0.2
-    });
-  };
 
   strips.forEach(strip => {
     const bg = strip.querySelector('.strip-bg');
