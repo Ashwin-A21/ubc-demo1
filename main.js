@@ -2,12 +2,21 @@ document.addEventListener('DOMContentLoaded', () => {
   // --- 1. SURGICAL CUSTOM CURSOR ---
   const dot = document.querySelector('.cursor-dot');
   const ring = document.querySelector('.cursor-ring');
+  const cursorEl = document.querySelector('.am-cursor');
   let mX = 0, mY = 0, dX = 0, dY = 0, rX = 0, rY = 0;
+  let cursorInitialized = false;
 
   // Active globally and immediately
   window.addEventListener('mousemove', (e) => {
     mX = e.clientX;
     mY = e.clientY;
+    
+    if (!cursorInitialized) {
+      dX = mX; dY = mY; rX = mX; rY = mY; // Snap to first position
+      cursorInitialized = true;
+      if (cursorEl) cursorEl.classList.add('is-active');
+      document.body.classList.add('custom-cursor-active');
+    }
   });
 
   const updateCursor = () => {
